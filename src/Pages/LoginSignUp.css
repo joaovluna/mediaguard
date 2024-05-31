@@ -67,16 +67,6 @@
     font-weight: 500;
 }
 
-@media(max-width: 1920px) {
-    
-}
-@media(max-width: 1600px){
-    
-}
-
-@media(max-width: 1680px) {
-    
-}
 @media(max-width: 1440px){
     
     .loginSignUp-container {
@@ -116,4 +106,36 @@
         width: 20rem;
         margin-left: 4.5rem;
     }
+}
+@media(max-width: 500px) {
+    .loginSignUp{
+        padding-top: 5rem;
+    }
+    .loginSignUp-container {
+        width: 25rem;
+        height: 50rem;
+        
+    }
+    .loginSignUp-container button {
+        width: 15rem;
+        margin-left: 3rem;
+    }
+
+}
+
+@media(max-width: 380px) {
+    .loginSignUp{
+        padding-top: 5rem;
+    }
+    .loginSignUp-container {
+        width: 20rem;
+        height: 50rem;
+        
+    }
+    .loginSignUp-container button {
+        width: 15rem;
+        height: 3.5rem;
+        margin-left: 1rem;
+    }
+
 }

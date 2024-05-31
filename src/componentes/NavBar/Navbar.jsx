@@ -3,13 +3,14 @@ import './Navbar.css';
 import logo from '../../assets/logo_index.png';
 import menu_icon from '../../assets/icons8-menu.svg';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [mov, setMov] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const [menu, setMenu] = useState('signUp');
   const [mobileMenu, setMobileMenu] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -17,14 +18,18 @@ const Navbar = () => {
     });
   }, []);
 
+  useEffect(() => {
+    // Esconde o menu quando a localização da rota muda
+    setMobileMenu(false);
+  }, [location]);
+
   const handleClick = (index) => {
     setActiveIndex(index);
     if (index === 4) {
       setMenu('signup');
     } else if (index === 5) {
       setMenu('login');
-    }else {
-      setActiveIndex(index);
+    } else {
       setMenu('home');
     }
   };
@@ -36,7 +41,7 @@ const Navbar = () => {
   return (
     <nav className={`container ${mov ? 'dark-nav' : ''}`}>
       <RouterLink to='/home'>
-      <img src={logo} alt="" className='logo' style={{cursor: 'pointer'}}/>
+        <img src={logo} alt="" className='logo' style={{ cursor: 'pointer' }} />
       </RouterLink>
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li className={activeIndex === 0 ? 'active' : ''}>
