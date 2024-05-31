@@ -35,7 +35,9 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${mov ? 'dark-nav' : ''}`}>
-      <img src={logo} alt="" className='logo' />
+      <RouterLink to='/home'>
+      <img src={logo} alt="" className='logo' style={{cursor: 'pointer'}}/>
+      </RouterLink>
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li className={activeIndex === 0 ? 'active' : ''}>
           <ScrollLink to='hero' smooth={true} offset={0} duration={500} onClick={() => handleClick(0)}>
