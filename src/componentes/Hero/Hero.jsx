@@ -10,8 +10,9 @@ const Hero = () => {
   return (
     <div className='hero container'>
       <div className="hero-text">
-        <h1>Garanta sua segurança com nosso classificador de áudios, não seja enganado por <em>deepfakes</em>.</h1>
-        <p>Com acurácia de mais de 80%, indicamos a possibilidade de um áudio encaminhado pelo WhatsApp ser fake.</p>
+        <h1>Garanta sua segurança com nosso classificador de áudios, 
+          não seja enganado por vozes sintetizadas.</h1>
+        <p>Indicamos a possibilidade de um áudio encaminhado pelo WhatsApp ser falso.</p>
        <button className='btn' onClick={openWhatsApp}>
         <strong>Saiba mais</strong><img src={wpp_icon} alt=""/></button>
       </div>

@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <div className="about-right">
             <h3>SOBRE MEDIAGUARD</h3>
-            <h2>Classificador de áudios, seu segurança contra deepfakes.</h2>
+            <h2>Classificador de áudios, o seu segurança contra deepfakes.</h2>
             <p>
                 Com o aumento da inteligência artificial, MediaGuard vem como solução para detectar áudios que foram gerados
                 por <em>IA</em>, ao enviar um áudio ao nosso bot o usuário receberá a porcentagem de ser verdadeiro ou não.
