@@ -40,28 +40,28 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${mov ? 'dark-nav' : ''}`}>
-      <RouterLink to='/home'>
+      <RouterLink to='/mediaguard'>
         <img src={logo} alt="" className='logo' style={{ cursor: 'pointer' }} />
       </RouterLink>
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li className={activeIndex === 0 ? 'active' : ''}>
           <ScrollLink to='hero' smooth={true} offset={0} duration={500} onClick={() => handleClick(0)}>
-            <RouterLink to='/home'>Inicio</RouterLink>
+            <RouterLink to='/mediaguard'>Inicio</RouterLink>
           </ScrollLink>
         </li>
         <li className={activeIndex === 1 ? 'active' : ''}>
           <ScrollLink to='premium' smooth={true} offset={-360} duration={500} onClick={() => handleClick(1)}>
-            <RouterLink to='/home'>Premium</RouterLink>
+            <RouterLink to='/mediaguard'>Premium</RouterLink>
           </ScrollLink>
         </li>
         <li className={activeIndex === 2 ? 'active' : ''}>
           <ScrollLink to='about' smooth={true} offset={-260} duration={500} onClick={() => handleClick(2)}>
-            <RouterLink to='/home'>Sobre</RouterLink>
+            <RouterLink to='/mediaguard'>Sobre</RouterLink>
           </ScrollLink>
         </li>
         <li className={activeIndex === 3 ? 'active' : ''}>
           <ScrollLink to='contact' smooth={true} offset={0} duration={500} onClick={() => handleClick(3)}>
-            <RouterLink to='/home'>Contate-nos</RouterLink>
+            <RouterLink to='/mediaguard'>Contate-nos</RouterLink>
           </ScrollLink>
         </li>
         <li>
